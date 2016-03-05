@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
+
+
+.header {
+  padding-top: em(10);
+  font-family: $open-sans;
+
+  @include clearfix();
+  @include media($medium-screen-up){
+    padding-top: em(30);
+  }
+
+  @include outer-container(90%);
+
+  &__brand {
+    @include media($medium-screen-up){
+      float: left;
+    }
+    &--name{
+      font-family: 'Playfair Display', Merriweather;
+      font-size: em(24);
+    }
+
+    &--description{
+      font-size: em(13);
+      color: #a9a9a9;
+    }
+
+    margin-bottom: 22px;
+  }
+
+  &__nav {
+    @include margin(20px null 30px null);
+    @include media($medium-screen-up){
+      margin-top: 10px;
+      float: right;
+    }
+
+    ul {
+      li {
+        @include media($medium-screen-up) {
+          display: inline;
+          @include margin(null em(5) null em(5))
+        }
+        @include media($large-screen-up) {
+          @include margin(null em(15) null em(15))
+        }
+        a {
+          color: #000;
+          font-size:em(15);
+        }
+      }
+    }
+  }
+
+}
+
+
+.home {
+  &__content {
+    font-size: em(13);
+
+    &--tag_line{
+      @include margin(em(20) null em(80) null);
+      font-size: em(21);
+      button{
+        font-size: em(9);
+      }
+
+      @include media($medium-screen-up){
+        font-size: em(30);
+        @include margin(em(40) null em(50) null);
+        @include outer-container(75%)
+      }
+    }
+
+    &--posts{
+      .heading{
+        font-size: em(30);
+        margin-bottom:em(7);
+      }
+
+      @include media($medium-screen-up){
+        @include outer-container(50%);
+      }
+    }
+  }
+}
+
+.footer {
+
+}

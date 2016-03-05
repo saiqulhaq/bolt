@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+    <link rel="author" href="https://plus.google.com/+SaiqulHaq">
+
+    <link rel="stylesheet" type="text/css" href="{{asset "css/application.css"}}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display&text=M.SAIQULHAQ">
+    <script type="text/javascript" src="http://localhost:48626/takana.js"></script>
+    <script type="text/javascript">
+        takanaClient.run({
+            host: 'localhost:48626' // optional, defaults to localhost:48626
+        });
+    </script>
+
+    {{ghost_head}}
+</head>
+<body class="site {{body_class}}">
+
+{{navigation}}
+        {{{body}}}
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+{{ghost_foot}}
+<script type="text/javascript" src="{{asset "js/application.js"}}"></script>
+
+</body>
+</html>
