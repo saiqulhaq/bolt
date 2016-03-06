@@ -1,8 +1,9 @@
-# Casper
+# Bolt
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+Ghost custom theme.
 
-To download, visit the [releases](https://github.com/TryGhost/Casper/releases) page.
+This theme is modification of Ghost default theme.
+
 
 ## Copyright & License
 
