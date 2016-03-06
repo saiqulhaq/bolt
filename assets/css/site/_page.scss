@@ -1,0 +1,8 @@
+.page{
+  &__wrapper{
+    @include outer-container(95%);
+    @include media($medium-screen-up){
+      @include outer-container(60%);
+    }
+  }
+}

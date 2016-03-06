@@ -1,0 +1,51 @@
+.home {
+  &__content {
+    font-size: em(13);
+
+    &--tag_line{
+      @include outer-container(85%);
+      font-size: em(21);
+
+      button{
+        font-size: em(9);
+        white-space: normal;
+      }
+
+      @include padding(em(20) null null null);
+      height:40vh;
+
+      @include media($medium-screen-up){
+        font-size: em(30);
+        height:60vh;
+        @include padding(em(30) null null null);
+        @include outer-container(75%)
+      }
+
+      @include media($large-screen-up){
+        @include outer-container(40%);
+        @include padding(em(100) null null null);
+        height:80vh;
+      }
+    }
+
+    &--posts{
+      .heading{
+        font-size: em(30);
+        margin-bottom:em(7);
+        text-align: center;
+      }
+
+      @include media($medium-screen-up){
+        @include outer-container(50%);
+      }
+
+      .content {
+        margin-top: em(40);
+        @include media($large-screen-up){
+          @include outer-container(70%);
+        }
+      }
+    }
+  }
+}
+

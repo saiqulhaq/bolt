@@ -1,0 +1,57 @@
+.header {
+  padding-top: em(10);
+  font-family: $open-sans;
+
+  @include clearfix();
+  @include media($medium-screen-up){
+    padding-top: em(30);
+  }
+
+  @include outer-container(90%);
+  @include media($large-screen-up){
+    @include outer-container(75%);
+  }
+
+  &__brand {
+    @include media($medium-screen-up){
+      float: left;
+    }
+    &--name{
+      font-family: 'Playfair Display', Merriweather;
+      font-size: em(24);
+    }
+
+    &--description{
+      font-size: em(13);
+      color: #a9a9a9;
+    }
+
+    margin-bottom: 22px;
+  }
+
+  &__nav {
+    @include margin(20px null 30px null);
+    @include media($medium-screen-up){
+      margin-top: 10px;
+      float: right;
+    }
+
+    ul {
+      li {
+        @include media($medium-screen-up) {
+          display: inline;
+          @include margin(null em(5) null em(5))
+        }
+        @include media($large-screen-up) {
+          @include margin(null em(15) null em(15))
+        }
+        a {
+          color: #000;
+          font-size:em(15);
+        }
+      }
+    }
+  }
+
+}
+

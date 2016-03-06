@@ -1,7 +1,8 @@
 {{#foreach posts}}
-<article class="{{post_class}}">
-    <header class="post-header">
-        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-    </header>
-</article>
+    <article class="post--loop {{post_class}}">
+        <h2 class="post--loop__title">
+            <a href="{{url}}">{{{title}}}</a>
+        </h2>
+    </article>
 {{/foreach}}
+
